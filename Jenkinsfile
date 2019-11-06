@@ -154,5 +154,150 @@ pipeline {
       }
     }
 
+    stage('Key Meetings') {
+      parallel {
+        stage('Infrastructure TL') {
+          steps {
+            echo 'Meet with Infrastructure team leader'
+          }
+        }
+
+        stage('Chief Architect') {
+          steps {
+            echo 'Meet with Chief Architect'
+          }
+        }
+
+        stage('UI TL') {
+          steps {
+            echo 'Meet with UI team leader'
+          }
+        }
+      }
+    }
+
+    stage('Python Exercises') {
+      parallel {
+        stage('Ex1') {
+          steps {
+            echo 'Complete Ex1'
+          }
+        }
+
+        stage('Ex2') {
+          steps {
+            echo 'Complete Ex2'
+          }
+        }
+
+        stage('Ex3') {
+          steps {
+            echo 'Complete Ex3'
+          }
+        }
+      }
+    }
+
+
+    stage('Networking Exercises') {
+      parallel {
+        stage('Ex1') {
+          steps {
+            echo 'Complete Ex1'
+          }
+        }
+
+        stage('Ex2') {
+          steps {
+            echo 'Complete Ex2'
+          }
+        }
+      }
+    }
+
+    stage('RE Exercises') {
+      parallel {
+        stage('Ex1') {
+          steps {
+            echo 'Complete Ex1'
+          }
+        }
+
+        stage('Ex2') {
+          steps {
+            echo 'Complete Ex2'
+          }
+        }
+
+        stage('Ex3') {
+          steps {
+            echo 'Complete Ex3'
+          }
+        }
+
+        stage('Ex4') {
+          steps {
+            echo 'Complete Ex4'
+          }
+        }
+      }
+    }
+
+
+    stage('SB Platform Installation') {
+      parallel {
+        stage('Clone pythonect') {
+          steps {
+            echo 'Clone pythonect'
+          }
+        }
+
+        stage('Clone agent') {
+          steps {
+            echo 'Clone agent'
+          }
+        }
+
+        stage('Clone test env') {
+          steps {
+            echo 'Clone test env'
+          }
+        }
+      }
+    }
+
+    stage('CMS') {
+      parallel {
+        stage('Intro') {
+          steps {
+            echo 'Intro meeting with team member'
+          }
+        }
+
+        stage('Backend') {
+          steps {
+            echo 'Backend perspective meeting with team member'
+          }
+        }
+      }
+    }
+
+    stage('Publish First Item') {
+      parallel {
+        stage('Write your own item') {
+          steps {
+            echo 'Write your own item'
+          }
+        }
+
+        stage('Test') {
+          steps {
+            echo 'Test your new item using test env'
+          }
+        }
+      }
+    }
+
+
   }
 }
