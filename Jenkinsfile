@@ -120,7 +120,7 @@ pipeline {
         stage('MongoDB Client') {
           steps {
             echo 'Install Robo 3T'
-            echo 'Connect using '
+            echo 'Connect using given credentials'
           }
         }
 
