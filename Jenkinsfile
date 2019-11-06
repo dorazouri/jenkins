@@ -173,6 +173,7 @@ pipeline {
             echo 'Meet with UI team leader'
           }
         }
+
       }
     }
 
@@ -195,9 +196,9 @@ pipeline {
             echo 'Complete Ex3'
           }
         }
+
       }
     }
-
 
     stage('Networking Exercises') {
       parallel {
@@ -212,6 +213,7 @@ pipeline {
             echo 'Complete Ex2'
           }
         }
+
       }
     }
 
@@ -240,9 +242,9 @@ pipeline {
             echo 'Complete Ex4'
           }
         }
+
       }
     }
-
 
     stage('SB Platform Installation') {
       parallel {
@@ -263,6 +265,7 @@ pipeline {
             echo 'Clone test env'
           }
         }
+
       }
     }
 
@@ -279,6 +282,7 @@ pipeline {
             echo 'Backend perspective meeting with team member'
           }
         }
+
       }
     }
 
@@ -295,9 +299,9 @@ pipeline {
             echo 'Test your new item using test env'
           }
         }
+
       }
     }
-
 
   }
 }
