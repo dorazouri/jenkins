@@ -145,12 +145,12 @@ pipeline {
           }
         }
 
-        stage('Platform Introduction') {
-          steps {
-            echo 'Get to know the platform'
-          }
-        }
+      }
+    }
 
+    stage('Platform Introduction') {
+      steps {
+        echo 'Get to know the platform'
       }
     }
 
